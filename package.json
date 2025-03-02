@@ -9,18 +9,21 @@
     "web": "expo start --web"
   },
   "dependencies": {
+    "@expo/metro-runtime": "~4.0.1",
     "expo": "~52.0.37",
     "expo-status-bar": "~2.0.1",
     "react": "18.3.1",
-    "react-native": "0.76.7",
     "react-dom": "18.3.1",
+    "react-native": "0.76.7",
     "react-native-web": "~0.19.13",
-    "@expo/metro-runtime": "~4.0.1"
+    "styled-components": "^6.1.15"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
-    "typescript": "^5.3.3",
-    "@types/react": "~18.3.12"
+    "@types/react": "~18.3.12",
+    "@types/styled-components-react-native": "^5.2.5",
+    "typescript": "^5.3.3"
   },
-  "private": true
+  "private": true,
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
