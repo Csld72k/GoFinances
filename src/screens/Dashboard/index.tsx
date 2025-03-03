@@ -1,5 +1,5 @@
 import React from 'react';
-import { Container, Header, UserWrapper, UserInfo, Photo, User, UserGreeting, UserName } from './styles';
+import { Container, Header, UserWrapper, UserInfo, Photo, User, UserGreeting, UserName, Icon } from './styles';
 
 export function Dashboard() {
   return (
@@ -13,6 +13,7 @@ export function Dashboard() {
               <UserName>Claudiney</UserName>
             </User>
           </UserInfo>
+          <Icon name='log-out-outline' />
         </UserWrapper>
       </Header>
     </Container>
