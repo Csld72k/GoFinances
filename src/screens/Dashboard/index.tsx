@@ -1,5 +1,16 @@
 import React from 'react';
-import { Container, Header, UserWrapper, UserInfo, Photo, User, UserGreeting, UserName, Icon } from './styles';
+import {
+  Container,
+  Header,
+  UserWrapper,
+  UserInfo,
+  Photo,
+  User,
+  UserGreeting,
+  UserName,
+  Icon
+} from './styles';
+import { HighlightCard } from '../components/HighlightCard';
 
 export function Dashboard() {
   return (
@@ -16,6 +27,8 @@ export function Dashboard() {
           <Icon name='log-out-outline' />
         </UserWrapper>
       </Header>
+
+      <HighlightCard />
     </Container>
   )
 }
