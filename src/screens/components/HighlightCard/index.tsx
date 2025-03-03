@@ -15,7 +15,7 @@ export function HighlightCard() {
     <Container>
       <Header>
         <Tittle>Entrada</Tittle>
-        <Icon name='arrow-up' />
+        <Icon name='arrow-up-circle' />
       </Header>
       <Footer>
         <Amount>R$ 17.400,00</Amount>
