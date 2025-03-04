@@ -1,11 +1,17 @@
 {
   "expo": {
     "name": "GoFinances",
-    "slug": "GoFinances",
+    "slug": "gofinances",
     "version": "1.0.0",
     "newArchEnabled": true,
     "plugins": [
       "expo-font"
-    ]
+    ],
+    "extra": {
+      "eas": {
+        "projectId": "79020ae4-b7f3-4ff4-8be6-9fb76306d168"
+      }
+    },
+    "owner": "claudiney.silva"
   }
 }
