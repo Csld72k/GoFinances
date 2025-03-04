@@ -55,7 +55,7 @@ export const Icon = styled(Ionicons)`
 export const HighlightCards = styled.ScrollView.attrs({
   horizontal: true,
   showsHorizontalScrollIndicator: false,
-  contentContainerStyle: { paddingHorizontal: 24 }
+  contentContainerStyle: { paddingLeft: 16, paddingRight: 0 }
 })`
   width: 100%;
   position: absolute;
