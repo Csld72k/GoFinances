@@ -80,5 +80,5 @@ export const Tittle = styled.Text`
 `;
 
 export const TransactionsList = styled.FlatList`
-  
+  border-radius: 5px;
 `;
