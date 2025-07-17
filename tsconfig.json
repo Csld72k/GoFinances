@@ -2,5 +2,19 @@
   "compilerOptions": {
     "strict": true
   },
-  "extends": "expo/tsconfig.base"
+  "extends": "expo/tsconfig.base",
+  "include": [
+    "src/global/styles/styled.d.ts",
+    "src/**/*.ts",
+    "src/**/*.tsx",
+    "src/**/*.d.ts",
+    "types/**/*.d.ts",
+    "src/**/*"
+  ],
+  "paths": {
+    "*": [
+      "*",
+      "./types/*"
+    ]
+  }
 }

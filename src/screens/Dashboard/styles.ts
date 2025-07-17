@@ -1,3 +1,5 @@
+//  For some reason here I'm facing a problem with type "O elemento de associação 'theme' tem implicitamente um tipo 'any'.ts(7031)"
+
 import styled from 'styled-components/native';
 
 export const Container = styled.View`
@@ -5,11 +7,12 @@ export const Container = styled.View`
   justify-content: center;
   align-items: center;
 
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }: { theme: any }) => theme.colors.background};
 
 `;
 
 export const Title = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.regular};
   font-size: 24px;
-  font-weight: bold;
+  color: ${({ theme }: { theme: any }) => theme.colors.title};
 `;
