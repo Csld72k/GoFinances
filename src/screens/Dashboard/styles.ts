@@ -1,6 +1,7 @@
 //  For some reason here I'm facing a problem with type "O elemento de associação 'theme' tem implicitamente um tipo 'any'.ts(7031)"
 
 import styled from 'styled-components/native';
+import { Ionicons } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
 
 export const Container = styled.View`
@@ -23,7 +24,7 @@ export const UserWrapper = styled.View`
   width: 100%;
   padding: 0 24px;
   flex-direction: row;
-  /* justify-content: space-between; */
+  justify-content: space-between;
   align-items: center;
 `;
 
@@ -52,4 +53,9 @@ export const UserName = styled.Text`
 color: ${({ theme }: { theme: any }) => theme.colors.shape};
 font-size: ${RFValue(18)}px;
 font-family: ${({ theme }: { theme: any }) => theme.fonts.bold};
+`;
+
+export const Icon = styled(Ionicons)`
+color: ${({ theme }: { theme: any }) => theme.colors.secondary};
+font-size: ${RFValue(24)}px;
 `;
