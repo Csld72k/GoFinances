@@ -59,3 +59,12 @@ export const Icon = styled(Ionicons)`
 color: ${({ theme }: { theme: any }) => theme.colors.secondary};
 font-size: ${RFValue(24)}px;
 `;
+
+export const HighlightCards = styled.ScrollView.attrs({
+  horizontal: true,
+  showsHorizontalScrollIndicator: false,
+  contentContainerStyle: { paddingLeft: 20 },
+  bounces: false,
+  overScrollMode: "never"
+})`
+`;
