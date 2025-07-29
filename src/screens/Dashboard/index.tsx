@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { HighlightCard } from '../../components/HighlightCard';
 
 import {
@@ -18,7 +19,7 @@ import {
 export function Dashboard() {
   return (
     <Container>
-      <Header>
+      <Header style={{ paddingTop: useSafeAreaInsets().top }}>
 
         <UserWrapper>
           <UserInfo>
