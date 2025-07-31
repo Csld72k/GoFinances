@@ -1,6 +1,8 @@
 import React from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
 import { HighlightCard } from '../../components/HighlightCard';
+import { TransactionCard } from '../../components/TransactionCard';
 
 import {
   Container,
@@ -12,7 +14,9 @@ import {
   UserGreeting,
   UserName,
   Icon,
-  HighlightCards
+  HighlightCards,
+  Transactions,
+  Tittle
 } from './styles';
 
 
@@ -57,6 +61,12 @@ export function Dashboard() {
         />
 
       </HighlightCards>
+
+      <Transactions>
+        <Tittle>Listagem</Tittle>
+
+        <TransactionCard />
+      </Transactions>
 
     </Container>
   )
