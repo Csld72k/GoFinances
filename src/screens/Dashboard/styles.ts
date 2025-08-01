@@ -1,8 +1,12 @@
 //  For some reason here I'm facing a problem with type "O elemento de associação 'theme' tem implicitamente um tipo 'any'.ts(7031)"
 
 import styled from 'styled-components/native';
+import { FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
+
+import { DataListProps } from '.';
 
 export const Container = styled.View`
   flex: 1;
@@ -86,6 +90,8 @@ export const Tittle = styled.Text`
   margin-bottom: 16px;
 `;
 
-export const TransactionsList = styled.FlatList`
+export const TransactionsList = styled(FlatList as new () => FlatList<DataListProps>).attrs({
 
+})`
+  
 `;

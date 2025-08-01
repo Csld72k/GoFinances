@@ -2,7 +2,7 @@ import React from 'react';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { HighlightCard } from '../../components/HighlightCard';
-import { TransactionCard } from '../../components/TransactionCard';
+import { TransactionCard, TransactionCardProps } from '../../components/TransactionCard';
 
 import {
   Container,
@@ -20,10 +20,15 @@ import {
   TransactionsList
 } from './styles';
 
+export interface DataListProps extends TransactionCardProps {
+  id: string;
+}
+
 
 export function Dashboard() {
-  const data = [
+  const data: DataListProps[] = [
     {
+      id: '1',
       type: 'positive',
       tittle: 'Desenvolvimento de site',
       amount: 'R$ 12.000,00',
@@ -34,6 +39,7 @@ export function Dashboard() {
       date: '13/04/2020'
     },
     {
+      id: '2',
       type: 'negative',
       tittle: 'Hamburgueria Pizzy',
       amount: 'R$ 59,00',
@@ -44,6 +50,7 @@ export function Dashboard() {
       date: '10/04/2020'
     },
     {
+      id: '3',
       type: 'negative',
       tittle: 'Aluguel do apartamento',
       amount: 'R$ 1.200,00',
@@ -101,9 +108,10 @@ export function Dashboard() {
 
         <TransactionsList
           data={data}
-          renderItem={({ item }) => <TransactionCard data={item} />}
+          keyExtractor={(item: DataListProps) => item.id}
+          renderItem={({ item }: { item: DataListProps }) => <TransactionCard data={item} />}
           showsVerticalScrollIndicator={false}
-          contentContainerStyle={{ marginBottom: useSafeAreaInsets().bottom }}
+          contentContainerStyle={{ paddingBottom: useSafeAreaInsets().bottom }}
         />
 
       </Transactions>
