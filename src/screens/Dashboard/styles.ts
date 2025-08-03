@@ -4,7 +4,7 @@ import styled from 'styled-components/native';
 import { FlatList } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import { RFPercentage, RFValue } from 'react-native-responsive-fontsize';
-import { useSafeAreaInsets } from 'react-native-safe-area-context';
+// import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { DataListProps } from '.';
 
@@ -83,7 +83,7 @@ export const Transactions = styled.View`
   margin-top: ${RFPercentage(12)}px;
 `;
 
-export const Tittle = styled.Text`
+export const Title = styled.Text`
   font-size: ${RFValue(18)}px;
   font-family: ${({ theme }: { theme: any }) => theme.fonts.regular};
 

@@ -3,7 +3,7 @@ import React from 'react';
 import {
   Container,
   Header,
-  Tittle,
+  Title,
   Icon,
   Footer,
   Amount,
@@ -12,7 +12,7 @@ import {
 
 interface Props {
   type: 'up' | 'down' | 'total';
-  tittle: string;
+  title: string;
   amount: string;
   lastTransaction: string;
 }
@@ -23,13 +23,13 @@ const icon = {
   total: 'dollar-sign'
 }
 
-export function HighlightCard({ type, tittle, amount, lastTransaction }: Props) {
+export function HighlightCard({ type, title, amount, lastTransaction }: Props) {
   return (
     <Container type={type}>
       <Header>
-        <Tittle type={type}>
-          {tittle}
-        </Tittle>
+        <Title type={type}>
+          {title}
+        </Title>
         <Icon name={icon[type]} type={type} />
       </Header>
 

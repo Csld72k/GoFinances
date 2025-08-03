@@ -21,7 +21,7 @@ export const Header = styled.View`
   justify-content: space-between;
   align-items: center;
 `;
-export const Tittle = styled.Text<TypeProps>`
+export const Title = styled.Text<TypeProps>`
   font-family: ${({ theme }: { theme: any }) => theme.fonts.regular};
   font-size: ${RFValue(14)}px;
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import {
   Container,
-  Tittle,
+  Title,
   Amount,
   Footer,
   Category,
@@ -18,7 +18,7 @@ interface Category {
 
 export interface TransactionCardProps {
   type: 'positive' | 'negative';
-  tittle: string;
+  title: string;
   amount: string;
   category: Category;
   date: string;
@@ -31,7 +31,7 @@ interface Props {
 export function TransactionCard({ data }: Props) {
   return (
     <Container>
-      <Tittle>{data.tittle}</Tittle>
+      <Title>{data.title}</Title>
       <Amount type={data.type}>
         {data.type === 'negative' && '-'}
         {data.amount}

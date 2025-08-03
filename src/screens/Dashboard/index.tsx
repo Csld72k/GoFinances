@@ -16,7 +16,7 @@ import {
   Icon,
   HighlightCards,
   Transactions,
-  Tittle,
+  Title,
   TransactionsList
 } from './styles';
 
@@ -30,7 +30,7 @@ export function Dashboard() {
     {
       id: '1',
       type: 'positive',
-      tittle: 'Desenvolvimento de site',
+      title: 'Desenvolvimento de site',
       amount: 'R$ 12.000,00',
       category: {
         name: 'vendas',
@@ -41,7 +41,7 @@ export function Dashboard() {
     {
       id: '2',
       type: 'negative',
-      tittle: 'Hamburgueria Pizzy',
+      title: 'Hamburgueria Pizzy',
       amount: 'R$ 59,00',
       category: {
         name: 'Alimentação',
@@ -52,7 +52,7 @@ export function Dashboard() {
     {
       id: '3',
       type: 'negative',
-      tittle: 'Aluguel do apartamento',
+      title: 'Aluguel do apartamento',
       amount: 'R$ 1.200,00',
       category: {
         name: 'Casa',
@@ -84,19 +84,19 @@ export function Dashboard() {
 
         <HighlightCard
           type='up'
-          tittle='Entradas'
+          title='Entradas'
           amount='R$17.400,00'
           lastTransaction='Última entrada dia 13 de abril'
         />
         <HighlightCard
           type='down'
-          tittle='Saídas'
+          title='Saídas'
           amount='R$1.259,00'
           lastTransaction='Última saída dia 03 de abril'
         />
         <HighlightCard
           type='total'
-          tittle='Total'
+          title='Total'
           amount='R$16.141,00'
           lastTransaction='01 a 16 de abril'
         />
@@ -104,7 +104,7 @@ export function Dashboard() {
       </HighlightCards>
 
       <Transactions>
-        <Tittle>Listagem</Tittle>
+        <Title>Listagem</Title>
 
         <TransactionsList
           data={data}

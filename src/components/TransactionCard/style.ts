@@ -14,7 +14,7 @@ export const Container = styled.View`
   margin-bottom: 16px;
 `;
 
-export const Tittle = styled.Text`
+export const Title = styled.Text`
   font-family: ${({ theme }: { theme: any }) => theme.fonts.regular};
   font-size: ${RFValue(14)}px;
 `;
