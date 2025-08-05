@@ -32,12 +32,13 @@ export const Form = styled.View`
 `;
 
 export const Fields = styled.View`
-  /* flex: 1; */
-  /* width: 100%; */
-  /* padding: 24px; */
+
 `;
 
 export const TransactionsType = styled.View`
   flex-direction: row;
   justify-content: space-between;
+
+  margin-top: 8px;
+  margin-bottom: 16px;
 `;
